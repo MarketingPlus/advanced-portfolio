@@ -282,4 +282,67 @@ input::placeholder {
   box-shadow: 10px 10px 30px (0, 0, 0, 0.5);
 }
 
+/* ======== TAB BUTTONS ======== */
+.tab__buttons h3 {
+  font-weight: 500;
+  font-size: 14px;
+  color: white;
+  margin: 10px;
+}
+.tab__buttons {
+  display: block;
+  position: relative;
+  text-align: left;
+}
+
+.tab__buttons ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: 10px;
+  padding: 0;
+}
+
+.tab__buttons li {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.tab__buttons i {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: white;
+  font-size: 16px;
+}
+
+.tab__buttons h4 {
+  padding: 3px 15px 3px 15px;
+  font-weight: 300;
+}
 /* ======== TAB ======== */
+
+.tab {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  height: 75vh;
+  width: 100%;
+  border-left: 1px solid rgba(255, 255, 255, 0.4);
+  border-right: 1px solid rgba(255, 255, 255, 0.4);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 0px 0px 15px 0px;
+  backdrop-filter: blur(5px);
+  background: radial-gradient(
+    at 50% 0%,
+    rgba(36, 2, 116, 0.9),
+    rgba(10, 9, 83, 0.99)
+  );
+  box-shadow: 10px 10px 30px (0, 0, 0, 0.5);
+}
+
+.side__side {
+  display: flex;
+}
