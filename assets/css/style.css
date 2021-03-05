@@ -1,4 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,500;1,500&display=swap");
+
 :root {
+  --body-font: "Poppins", sans-serif;
+  --normal-font-size: 1rem;
 }
 
 body,
@@ -15,4 +19,14 @@ html {
   background-position: center;
   filter: blur(3px);
   -webkit-filter: blur(3px);
+  z-index: -100;
 }
+
+/* ======== HEADER ======== */
+
+.navbar {
+}
+
+/* ======== SIDEBAR ======== */
+
+/* ======== TAB ======== */
