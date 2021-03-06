@@ -291,6 +291,7 @@ input::placeholder {
   align-items: center;
   justify-content: center;
   padding-inline-start: 0;
+  top: -50px;
 }
 
 .my__avatar li {
@@ -555,12 +556,60 @@ li:hover .config {
 }
 
 .message__question {
-  width: 40vw;
-  height: 10vh;
+  width: 35vw;
+  height: 100%;
   background-color: #3b498c;
-  margin: 0 60px;
+  margin: 0 60px 15px 70px;
   border-radius: 5px;
 }
 
 .message__question p {
+  color: white;
+  font-weight: lighter;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  padding: 0 15px 0 15px;
+}
+
+.message__container-right {
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+}
+
+.message__container-left {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+}
+
+.message__header-right {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  color: white;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+.message__header-right img {
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  margin: 0 10px 0 0px;
+}
+
+.message__header-right h1 {
+  font-weight: lighter;
+  margin: 0 10px 0 0px;
+  font-size: 16px;
+}
+
+.message__header-right p {
+  display: flex;
+  align-items: center;
+  font-weight: lighter;
+  font-size: 14px;
+  margin-right: 10px;
 }
