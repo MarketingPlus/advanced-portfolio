@@ -13,9 +13,9 @@
 </head>
 <body>
     <div class="background">
-    <main>
-        <header>
-            <div class="navbar">
+    <main id="interface">
+        <header id="interfaceheader">
+            <div id="navbar" class="navbar">
                 <div class="buttons">
                     <ul class="top__buttons">
                         <li><div class="red__button"></div></li>
@@ -58,22 +58,22 @@
                         <ul>
                             <li id="top__line">
                                 <div class="about__tab-link">
-                                    <a href="#"><i class='bx bxs-user'><h4>About</h4></i></a>
+                                    <button class="tablinks" onclick="openTab(event, 'about')"><i class='bx bxs-user'><h4>About</h4></i></button>
                             </div></li>
 
                             <li>
                                 <div class="porfolio__tab-link">
-                                    <a href="#"><i class='bx bxs-check-square'><h4>Portfolio</h4></i></a>
+                                    <button class="tablinks" onclick="openTab(event, 'portfolio')"><i class='bx bxs-book-open'><h4>Porfolio</h4></i></button>
                             </div></li>
 
                             <li>
                                 <div class="contact__tab-link">
-                                    <a href="#"><i class='bx bxs-contact'><h4>Contact</h4></i></a>
+                                    <button class="tablinks" onclick="openTab(event, 'contact')"><i class='bx bxs-contact'><h4>Contact</h4></i></button>
                             </div></li>
 
                             <li>
                                 <div class="links__tab-link">
-                                    <a href="#"><i class='bx bx-link'><h4>Links</h4></i></a>
+                                    <button class="tablinks" onclick="openTab(event, 'links')"><i class='bx bx-link'><h4>Links</h4></i></button>
                             </div></li>
                         </ul>
                     </div>
@@ -84,31 +84,73 @@
         <section class="tab">
             <div class="settings__header">
                 <ul>
-                    <li><h2>Title</h2></li>
+                    <li><h2>10 NEW MESSAGES</h2><div class="notification"></div></li>
                     <li><div class="config"><i class='bx bx-slider-alt'></div></li></i>
                 </ul>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt reiciendis aliquid nobis cupiditate?</p>
             </div>
 
-            <div class="about__tab-container">
-                <div class="about__tab"></div>
+            <div id="about" id="defaultOpen" class="about__tab-container tabcontent">
+                <div class="about__tab">
+                    <h1>ABOUT</h1>
+                    <p>Hello World description</p>
+                </div>
             </div>
                 
-            <div class="portfolio__tab-container">
-                <div class="portfolio__tab"></div>
+            <div id="portfolio" class="portfolio__tab-container tabcontent">
+                <div class="portfolio__tab">
+                    <h1>PORTFOLIO</h1>
+                    <p>Hello World description</p>
+                </div>
             </div>
             
-            <div class="contact__tab-container">
-                <div class="contact__tab"></div>
+            <div id="contact" class="contact__tab-container tabcontent">
+                <div class="contact__tab">
+                    <h1>CONTACT</h1>
+                    <p>Hello World description</p>
+                </div>
             </div>
 
-            <div class="links__tab-container">
-                <div class="links__tab"></div>
+            <div id="links" class="links__tab-container tabcontent">
+                <div class="links__tab">
+                    <h1>LINKS</h1>
+                    <p>Hello World description</p>
+                </div>
             </div>
         
         </section>
 </div>
     </main>
 </div></div>
+
+<!-- DRAG AND DROP JQUERY -->
+            <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+            <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+            <script>
+                $( function() {
+                  $( "#interface" ).draggable();
+                } );
+                </script>
+
+<!-- VERTICAL TABS JS -->
+<script>
+    function openTab(evt, tabName) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tab__links");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+      document.getElementById(tabName).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
+    
+    // Get the element with id="defaultOpen" and click on it
+    document.getElementById("defaultOpen").click();
+    </script>
+
 </body>
 </html>
