@@ -503,3 +503,64 @@ li:hover .config {
 .about__tab-container {
   display: flex;
 }
+
+/* ================ ABOUT ME - MESSAGES ==============*/
+
+.about__tab {
+  overflow-y: scroll;
+  width: 100%;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  margin-left: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: radial-gradient(
+    at 50% 0%,
+    rgba(39, 66, 189, 0.8),
+    rgba(30, 28, 168, 0.99)
+  );
+  border-radius: 5px;
+}
+
+.message__header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: white;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+.message__header img {
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  margin: 0 10px 0 0px;
+}
+
+.message__header h1 {
+  font-weight: lighter;
+  margin: 0 10px 0 0px;
+  font-size: 16px;
+}
+
+.message__header p {
+  display: flex;
+  align-items: center;
+  font-weight: lighter;
+  font-size: 14px;
+}
+
+.message__question {
+  width: 40vw;
+  height: 10vh;
+  background-color: #3b498c;
+  margin: 0 60px;
+  border-radius: 5px;
+}
+
+.message__question p {
+}
