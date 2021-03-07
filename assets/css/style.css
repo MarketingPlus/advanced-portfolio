@@ -372,6 +372,9 @@ input::placeholder {
   font-weight: 300;
 }
 /* ======== TAB ======== */
+.header__mobile {
+  display: none;
+}
 
 .tab {
   display: flex;
@@ -416,7 +419,7 @@ input::placeholder {
   margin: 2px;
 }
 
-.settings__header ul {
+.settings__header .header__desktop {
   display: flex;
   justify-content: space-between;
   width: 100%;
@@ -792,6 +795,7 @@ li:hover .config {
 
 .contact__tab-container {
   width: 100%;
+  overflow-y: scroll;
 }
 
 .contact__tab {
@@ -906,16 +910,6 @@ li:hover .config {
 
 /* ========== LINKS TAB ============= */
 
-.center__class {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  align-items: center;
-  height: 100%;
-  flex-direction: column;
-}
-
 .links__tab-container {
   width: 100%;
   height: 100%;
@@ -1010,7 +1004,7 @@ li:hover .config {
   color: rgba(255, 255, 255, 0.4);
 }
 
-/* TOOLTIP BOTTOM */
+/* ==================== TOOLTIP BOTTOM ======================== */
 .social__tooltip-bottom {
   bottom: 0;
   left: 50%;
@@ -1026,4 +1020,67 @@ li:hover .config {
 .social__content:hover .social__tooltip-bottom {
   opacity: 1;
   bottom: -1rem;
+}
+
+/* =========================== MEDIA QUERIES ================== */
+
+@media screen and (max-width: 997px) {
+  .navbar {
+    display: none;
+  }
+
+  aside {
+    display: none;
+  }
+
+  ::-webkit-scrollbar {
+    width: 10px;
+    margin-left: 5px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: radial-gradient(
+      at 50% 0%,
+      rgba(39, 66, 189, 0.8),
+      rgba(30, 28, 168, 0.99)
+    );
+    border-radius: 5px;
+  }
+
+  .settings__header {
+    display: none;
+  }
+
+  .settings__header-mobile {
+    display: flex;
+    height: 15%;
+    width: 100%;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+  }
+
+  .header__mobile {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    width: 100%;
+    flex-direction: row;
+    padding: 0;
+  }
+
+  .header__mobile li {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-content: center;
+  }
+
+  .tablinks {
+    background-color: red;
+    margin: 10px;
+    width: 100%;
+  }
+
+  .tab {
+    border-radius: 15px;
+  }
 }
