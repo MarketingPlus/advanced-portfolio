@@ -507,7 +507,7 @@ li:hover .config {
 
 /* ================ ABOUT ME - MESSAGES ==============*/
 
-.about__tab {
+.about__tab-container {
   overflow-y: scroll;
   width: 100%;
 }
@@ -665,4 +665,79 @@ li:hover .config {
   height: 1px;
   background-color: #34468f;
   border-radius: 5px;
+}
+
+/* ======================== PORTFOLIO TAB ============================= */
+
+.portfolio__tab {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.portfolio__container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 95%;
+  height: 100%;
+}
+
+.portfolio__tab h1 {
+  color: white;
+  font-weight: bolder;
+  margin-bottom: -1%;
+}
+
+.portfolio__tab p {
+  color: white;
+  font-weight: lighter;
+}
+
+.card {
+  background-color: #3b498c;
+  width: 25%;
+  height: 100%;
+  margin: 5px;
+  border-radius: 10px;
+  transition: 0.5s ease;
+}
+
+.card img {
+  width: 100%;
+  height: 50%;
+  z-index: -1;
+  border-radius: 10px;
+  transition: 0.5s ease;
+}
+
+.card-header,
+.card-p {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  color: white;
+}
+
+.portfolio__tab-container {
+  overflow-y: scroll;
+  width: 100%;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  margin-left: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: radial-gradient(
+    at 50% 0%,
+    rgba(39, 66, 189, 0.8),
+    rgba(30, 28, 168, 0.99)
+  );
+  border-radius: 5px;
+}
+
+#more__projects {
 }
