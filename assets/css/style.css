@@ -410,6 +410,10 @@ input::placeholder {
   border-bottom: 1px solid rgba(255, 255, 255, 0.4);
 }
 
+.settings__header-mobile {
+  display: none;
+}
+
 .settings__header p {
   font-size: 14px;
   font-weight: lighter;
@@ -669,7 +673,7 @@ li:hover .config {
 }
 
 .end__chat .line {
-  width: 300px;
+  width: 20rem;
   height: 1px;
   background-color: #34468f;
   border-radius: 5px;
@@ -1024,6 +1028,8 @@ li:hover .config {
 
 /* =========================== MEDIA QUERIES ================== */
 
+/* =================== MEDIUM LAPTOPS ================= */
+
 @media screen and (max-width: 997px) {
   .navbar {
     display: none;
@@ -1053,9 +1059,30 @@ li:hover .config {
 
   .settings__header-mobile {
     display: flex;
-    height: 15%;
+    height: 30%;
     width: 100%;
     border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+    flex-direction: column;
+  }
+
+  .settings__header-mobile h1 {
+    display: flex;
+    justify-content: center;
+    color: white;
+  }
+
+  .settings__header-mobile p {
+    display: flex;
+    justify-content: center;
+    color: white;
+    position: relative;
+    top: -10%;
+  }
+
+  .settings__header-mobile img {
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
   }
 
   .header__mobile {
@@ -1072,15 +1099,88 @@ li:hover .config {
     list-style: none;
     justify-content: center;
     align-content: center;
+    margin: 0.5rem;
+    position: relative;
+    top: -30%;
   }
 
   .tablinks {
-    background-color: red;
-    margin: 10px;
-    width: 100%;
+    display: block;
+    margin-left: auto;
+    padding: 0.75rem 2rem;
+    outline: none;
+    border: none;
+    background-color: #151883;
+    color: white;
+    font-size: 0.75rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: 0.3s;
   }
 
   .tab {
     border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    height: 90vh;
+    border-top: 1px solid rgba(255, 255, 255, 0.4);
   }
+
+  .about__tab-container,
+  .portfolio__tab-container,
+  .contact__tab-container,
+  .links__tab-container {
+    width: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 70%;
+    position: absolute;
+    top: 30%;
+  }
+
+  .card {
+    height: 50%;
+  }
+
+  .message__picture {
+    width: 90%;
+  }
+
+  .contact__tab p {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 3rem 2rem 3rem;
+  }
+
+  .links__tab p {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 3rem 0 3rem;
+  }
+
+  .end__chat .line {
+    width: 5rem;
+  }
+}
+
+/* =============== SMALL LAPTOPS =================== */
+
+@media screen and (max-height: 830px) {
+}
+
+@media screen and (max-width: 768) {
+  .card {
+    display: flex;
+    height: 50%;
+    width: 60%;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 576) {
 }
