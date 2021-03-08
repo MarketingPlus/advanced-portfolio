@@ -16,12 +16,14 @@
     <title>Benjamin Wilson | Portfolio</title>
 </head>
 <body>
+    <!-- WEBSITE BACKGROUND -->
     <div class="background">
     <main id="interface">
         <header id="interfaceheader">
 
-<!-- NAVIGATION TOP -->
-            <div id="navbar" class="navbar">
+        <!-- NAVIGATION TOP -->
+
+            <nav id="navbar" class="navbar">
                 <div class="buttons">
                     <ul class="top__buttons">
                         <li><div class="red__button"></div></li>
@@ -29,158 +31,164 @@
                         <li><div class="green__button"></div></li>
                     </ul>
                 </div>
+
                 <div class="arrow__buttons">
                     <ul class="movement__arrows">
-                        <li><div class="back__button"><i class='bx bx-left-arrow-alt'></i></div></li>
-                        <li><div class="forward__button"><i class='bx bx-right-arrow-alt'></i></div></li>
+                        <li><figure class="back__button"><i class='bx bx-left-arrow-alt'></i></figure></li>
+                        <li><figure class="forward__button"><i class='bx bx-right-arrow-alt'></i></figure></li>
                     </ul>
                 </div>
+
                 <div class="search__bar">
                     <input type="search" placeholder="MarketingPlus+"></i>
-                    
                 </div>
 
                 <div class="setting">
                     <i class='bx bx-cog'></i>
                 </div>
-            </div>
+            </nav>
 
-            <div class="navbar__mobile">
-                <div class="buttons">
+        <!-- NAVBAR MOBILE -->
+
+            <nav class="navbar__mobile">
+                <figure class="buttons">
                     <ul class="top__buttons">
-                        <li><div class="red__button"></div></li>
-                        <li><div class="yellow__button"></div></li>
-                        <li><div class="green__button"></div></li>
+                        <li><figure class="red__button"></figure></li>
+                        <li><figure class="yellow__button"></figure></li>
+                        <li><figure class="green__button"></figure></li>
                     </ul>
-                </div>
+                </figure>
+
                 <div class="setting">
                     <i class='bx bx-cog'></i>
                 </div>
-            </div>
-        
+            </nav>
         </header>
 
         <!-- PROFILE SIDE BAR -->
-<div class="side__side">
-        <aside>
-            <div class="sidebar">
-                <div class="my__avatar">
+
+        <section class="side__side">
+            <aside>
+                <div class="sidebar">
+                    <div class="my__avatar">
                         <img src="assets/images/avatar.jpg">
-                                <div class="logo"></div>
-                        <ul>
-                            <li><h1>Benjamin Wilson</h1></li>
-                            <li><div class="online"></div></li>
-                            <li><h2>MarketingPlus+</h2></li>
-                        </ul>
-                </div>
-                
+                             <div class="logo"></div>
+                                <ul>
+                                    <li><h1>Benjamin Wilson</h1></li>
+                                    <li><div class="online"></div></li>
+                                    <li><h2>MarketingPlus+</h2></li>
+                                </ul>
+                            </div>
+                                
 
 
-                <!-- SIDEBAR LINKS TO TAB -->
+        <!-- SIDEBAR LINKS TO TAB -->
 
                     <div class="tab__buttons">
                         <h3>QUICK ACCESS</h3>
-                        <ul>
-                            <li id="top__line">
-                                <div class="about__tab-link">
-                                    <button class="tablinks" onclick="openTab(event, 'about')"><i class='bx bxs-user'><h4>About</h4></i></button>
-                            </div></li>
+                            <ul>
+                                <li id="top__line">
+                                    <div class="about__tab-link">
+                                        <button class="tablinks" onclick="openTab(event, 'about')"><i class='bx bxs-user'><h4>About</h4></i></button>
+                                    </div></li>
 
-                            <li>
-                                <div class="porfolio__tab-link">
-                                    <button class="tablinks" onclick="openTab(event, 'portfolio')"><i class='bx bxs-book-open'><h4>Porfolio</h4></i></button>
-                            </div></li>
+                                <li>
+                                    <div class="porfolio__tab-link">
+                                        <button class="tablinks" onclick="openTab(event, 'portfolio')"><i class='bx bxs-book-open'><h4>Porfolio</h4></i></button>
+                                    </div></li>
 
-                            <li>
-                                <div class="contact__tab-link">
-                                    <button class="tablinks" onclick="openTab(event, 'contact')"><i class='bx bxs-contact'><h4>Contact</h4></i></button>
-                            </div></li>
+                                <li>
+                                    <div class="contact__tab-link">
+                                        <button class="tablinks" onclick="openTab(event, 'contact')"><i class='bx bxs-contact'><h4>Contact</h4></i></button>
+                                    </div></li>
 
-                            <li>
-                                <div class="links__tab-link">
-                                    <button class="tablinks" onclick="openTab(event, 'links')"><i class='bx bx-link'><h4>Links</h4></i></button>
-                            </div></li>
-                        </ul>
+                                <li>
+                                    <div class="links__tab-link">
+                                        <button class="tablinks" onclick="openTab(event, 'links')"><i class='bx bx-link'><h4>Links</h4></i></button>
+                                    </div></li>
+                            </ul>
                     </div>
+                </div>
+            </aside>
 
-            </div>
-        </aside>
 
+            <!-- TAB HEADER  -->
 
-        <!-- TAB HEADER  -->
-        <section class="tab">
-            <div class="settings__header">
-                <ul class="header__desktop">
-                    <li><h2>MarketingPlus+</h2><h3>Website Portfolio</h3></li>
-                    <li><div class="config"><i class='bx bx-slider-alt'></div></li></i>
-                </ul>
-                <p>Interactive site made by Benjamin Wilson - CEO of MarketingPlus+</p>
-            </div>
-            <div class="settings__header-mobile">
-                <h1>Benjamin Wilson</h1>
-                <p>Porfolio</p>
-                
-                <ul class="header__mobile">
+                <section class="tab">
+                    <header class="settings__header">
+                        <ul class="header__desktop">
+                            <li><h2>MarketingPlus+</h2><h3>Website Portfolio</h3></li>
+                            <li><div class="config"><i class='bx bx-slider-alt'></div></li></i>
+                        </ul>
+                            <p>Interactive site made by Benjamin Wilson - CEO of MarketingPlus+</p>
+                    </header>
 
-                    <li><img src="assets/images/avatar.jpg"></li>
+            <!-- TAB HEADER MOBILE -->
 
-                    <li>
-                        <div class="about__tab-mobile">
-                            <button class="tablinks" onclick="openTab(event, 'about')"><i class='bx bxs-user'><h4>About</h4></i></button>
-                    </div></li>
+                    <header class="settings__header-mobile">
+                        <h1>Benjamin Wilson</h1>
+                            <p>Porfolio</p> 
+                                <ul class="header__mobile">
+                                    <li><img src="assets/images/avatar.jpg"></li>
 
-                    <li>
-                        <div class="porfolio__tab-mobile">
-                            <button class="tablinks" onclick="openTab(event, 'portfolio')"><i class='bx bxs-book-open'><h4>Porfolio</h4></i></button>
-                    </div></li>
+                                    <li>
+                                        <div class="about__tab-mobile">
+                                            <button class="tablinks" onclick="openTab(event, 'about')"><i class='bx bxs-user'><h4>About</h4></i></button>
+                                    </div></li>
 
-                    <li>
-                        <div class="contact__tab-mobile">
-                            <button class="tablinks" onclick="openTab(event, 'contact')"><i class='bx bxs-contact'><h4>Contact</h4></i></button>
-                    </div></li>
+                                    <li>
+                                        <div class="porfolio__tab-mobile">
+                                            <button class="tablinks" onclick="openTab(event, 'portfolio')"><i class='bx bxs-book-open'><h4>Porfolio</h4></i></button>
+                                    </div></li>
 
-                    <li>
-                        <div class="links__tab-mobile">
-                            <button class="tablinks" onclick="openTab(event, 'links')"><i class='bx bx-link'><h4>Links</h4></i></button>
-                    </div></li>
-                </ul>
-            </div>
+                                    <li>
+                                        <div class="contact__tab-mobile">
+                                            <button class="tablinks" onclick="openTab(event, 'contact')"><i class='bx bxs-contact'><h4>Contact</h4></i></button>
+                                    </div></li>
+
+                                    <li>
+                                        <div class="links__tab-mobile">
+                                            <button class="tablinks" onclick="openTab(event, 'links')"><i class='bx bx-link'><h4>Links</h4></i></button>
+                                    </div></li>
+                                </ul>
+                    </header>
 
             <!-- ABOUT  TAB -->
 
-            <div id="about" id="defaultOpen" class="about__tab-container tabcontent">
-                <div class="about__tab">
-                    <div class="message__header">
-                        <img src="assets/images/logo.png">
-                        <h1>MarketingPlus+</h1>
-                        <p>9:00 AM</p>
-                    </div> 
-                        <div class="message__container-right">
-                            <div class="message__question">
-                                <p>Tell me a bit about yourself? What inspires you to develop websites and how did you start? 🖥️</p>
+                    <section id="about" id="defaultOpen" class="about__tab-container tabcontent">
+                        <div class="about__tab">
+                            <div class="message__header">
+                                <img src="assets/images/logo.png">
+                                    <h1>MarketingPlus+</h1>
+                                        <p>9:00 AM</p>
                             </div>
-                        </div>
 
-
-                        <div class="message__header-right">
-                            <h1>Benjamin Wilson</h1>
-                            <p>9:04 AM</p>
-                            <img src="assets/images/avatar.jpg">
-                        </div> 
-                        <div class="message__container-left">
-                            <div class="message__question">
-                                <p>I'm Benjamin Wilson, a national open water swimmer. Because of this I'm an inspiring website freelancer giving me the flexability to create stunning websites
-                                    in my own time and being my own BOSS 👨‍💼! <br><br>My dream is to create web experiences allowing customers to enjoy every second with the businesses I work with.
-                                    I started developing websites through Shopify for family friends.
-                                </p>
+                            <div class="message__container-right">
+                                <div class="message__question">
+                                    <p>Tell me a bit about yourself? What inspires you to develop websites and how did you start? 🖥️</p>
+                                </div>
                             </div>
-                        </div>
 
-                        <div class="message__header">
-                            <img src="assets/images/logo.png">
-                            <h1>MarketingPlus+</h1>
-                            <p>9:17 AM</p>
-                        </div> 
+                            <div class="message__header-right">
+                                <h1>Benjamin Wilson</h1>
+                                    <p>9:04 AM</p>
+                                        <img src="assets/images/avatar.jpg">
+                            </div> 
+
+                            <div class="message__container-left">
+                                <div class="message__question">
+                                    <p>I'm Benjamin Wilson, a national open water swimmer. Because of this I'm an inspiring website freelancer giving me the flexability to create stunning websites
+                                        in my own time and being my own BOSS 👨‍💼! <br><br>My dream is to create web experiences allowing customers to enjoy every second with the businesses I work with.
+                                        I started developing websites through Shopify for family friends.</p>     
+                                </div>
+                            </div>
+
+                            <div class="message__header">
+                                <img src="assets/images/logo.png">
+                                    <h1>MarketingPlus+</h1>
+                                        <p>9:17 AM</p>
+                            </div> 
+
                             <div class="message__container-right">
                                 <div class="message__question">
                                     <p>Explain to me a brief backstory about yourself so I can get a better understanding about you! ✨</p>
@@ -189,41 +197,43 @@
 
                             <div class="message__header-right">
                                 <h1>Benjamin Wilson</h1>
-                                <p>9:19 AM</p>
-                                <img src="assets/images/avatar.jpg">
+                                    <p>9:19 AM</p>
+                                        <img src="assets/images/avatar.jpg">
                             </div> 
+
                             <div class="message__container-left">
                                 <div class="message__question">
                                     <p>I have been working on websites every since year 10 at school, I did SDD (Software Design & Development) and IPT (Information Processing Technology) for my HCS year which has
                                         helped me gain a better understanding about software development, how Technology works, and a programming mind 🧠. <br><Br> This has helped me understand concepts about Website development a lot
                                         easier and learning them faster. After school I have created 5 websites on Shopify for family and friends to helped
-                                        their business. <br><br> 💫 This has helped me understand some API's, Web design principles, and CSS and HTML.
-                                    </p>
+                                        their business. <br><br> 💫 This has helped me understand some API's, Web design principles, and CSS and HTML.</p>    
                                 </div>
                             </div>
 
                             <div class="message__header">
                                 <img src="assets/images/logo.png">
-                                <h1>MarketingPlus+</h1>
-                                <p>9:32 AM</p>
+                                    <h1>MarketingPlus+</h1>
+                                        <p>9:32 AM</p>
                             </div> 
-                                <div class="message__container-right">
-                                    <div class="message__question">
-                                        <p>That sounds awesome!! any other infomation you want to provide me with ❓ </p>
-                                    </div>
+
+                            <div class="message__container-right">
+                                <div class="message__question">
+                                    <p>That sounds awesome!! any other infomation you want to provide me with ❓ </p>
                                 </div>
+                            </div>
 
                             <div class="message__header-right">
                                 <h1>Benjamin Wilson</h1>
                                     <p>9:38 AM</p>
-                                    <img src="assets/images/avatar.jpg">
-                                </div> 
-                                <div class="message__container-left">
-                                    <div class="message__picture">
-                                        <img src="assets/images/me.jpg">
+                                        <img src="assets/images/avatar.jpg">
+                            </div> 
+
+                            <div class="message__container-left">
+                                <div class="message__picture">
+                                    <img src="assets/images/me.jpg">
                                         <p>Here is an image of me just so you can put a face to the name 😊</p>
-                                    </div>
                                 </div>
+                            </div>
 
                             <div class="end__chat">
                                 <ul>
@@ -232,165 +242,171 @@
                                     <li><div class="line"></div></li>
                                 </ul>
                             </div>
-                </div>
-            </div>
-
-            <!-- PORTFOLIO TAB -->
-                
-            <div id="portfolio" class="portfolio__tab-container tabcontent">
-                <div class="portfolio__tab">
-                    <h1>PORTFOLIO</h1>
-                    <p>All my projects to date 🧩</p>
-
-                    <div class="portfolio__container">
-        
-                    <section class="first__project">
-                        <a href="https://zafino.com.au/" target="_blank">
-                        <img src="assets/images/zafino.png">
-                            <div class="card__overlay">
-                                <h1 class="card-header">Zafino</h1>
-                                <p class="card-p">Website Development</p></a>
-                            </div>
-                    </section>
-        
-                    <section class="card">
-                        <a href="https://artpartsfinearts.com.au/" target="_blank">
-                        <img src="assets/images/artparts.png">
-                        <div class="card__overlay">
-                            <h1 class="card-header">ArtParts</h1>
-                            <p class="card-p">Website Development</p></a>
                         </div>
                     </section>
-        
-                    <section class="card">
-                        <a href="#">
-                        <img src="assets/images/magicseal.png">
-                            <div class="card__overlay">
-                                <h1 class="card-header">Magicseal Sydney</h1>
-                                <p class="card-p">Coming Soon</p></a>
-                            </div>
-                    </section>
 
-                    <section class="card">
-                        <a href="#">
-                        <img src="assets/images/question.png">
-                            <div class="card__overlay">
-                                <h1 class="card-header">New Project</h1>
-                                <p class="card-p">Coming Soon</p></a>
-                            </div>
-                    </section>
-        
-                    <section class="card">
-                        <a href="#">
-                        <img src="assets/images/question.png">
-                            <div class="card__overlay">
-                                <h1 class="card-header">New Project</h1>
-                                <p class="card-p">Coming Soon</p></a>
-                            </div>
-                    </section>
-        
-                    <section class="card">
-                        <a href="#">
-                        <img src="assets/images/question.png">
-                            <div class="card__overlay">
-                                <h1 class="card-header">New Project</h1>
-                                <p class="card-p">Coming Soon</p></a>
-                            </div>
-                    </section>
+            <!-- PORTFOLIO TAB -->
+                                
+                    <section id="portfolio" class="portfolio__tab-container tabcontent">
+                        <div class="portfolio__tab">
+                            <h1>PORTFOLIO</h1>
+                                <p>All my projects to date 🧩</p>
 
-                    </div>
-                </div>
-            </div>
+                            <div class="portfolio__container">
+
+                                <section class="first__project">
+                                    <a href="https://zafino.com.au/" target="_blank">
+                                        <img src="assets/images/zafino.png">
+                                            <div class="card__overlay">
+                                                <h1 class="card-header">Zafino</h1>
+                                                <p class="card-p">Website Development</p></a>
+                                            </div>
+                                </section>
+                                
+                                <section class="card">
+                                    <a href="https://artpartsfinearts.com.au/" target="_blank">
+                                        <img src="assets/images/artparts.png">
+                                            <div class="card__overlay">
+                                                <h1 class="card-header">ArtParts</h1>
+                                                <p class="card-p">Website Development</p></a>
+                                            </div>
+                                </section>
+                                
+                                <section class="card">
+                                    <a href="#">
+                                        <img src="assets/images/magicseal.png">
+                                            <div class="card__overlay">
+                                                <h1 class="card-header">Magicseal Sydney</h1>
+                                                <p class="card-p">Coming Soon</p></a>
+                                            </div>
+                                </section>
+
+                                <section class="card">
+                                    <a href="#">
+                                        <img src="assets/images/question.png">
+                                            <div class="card__overlay">
+                                                <h1 class="card-header">New Project</h1>
+                                                <p class="card-p">Coming Soon</p></a>
+                                            </div>
+                                </section>
+                                
+                                <section class="card">
+                                    <a href="#">
+                                        <img src="assets/images/question.png">
+                                            <div class="card__overlay">
+                                                <h1 class="card-header">New Project</h1>
+                                                <p class="card-p">Coming Soon</p></a>
+                                            </div>
+                                </section>
+                                
+                                <section class="card">
+                                    <a href="#">
+                                        <img src="assets/images/question.png">
+                                            <div class="card__overlay">
+                                                <h1 class="card-header">New Project</h1>
+                                                <p class="card-p">Coming Soon</p></a>
+                                            </div>
+                                </section>
+
+                            </div>
+
+                        </div>
+                    </section>
 
             <!-- CONTACT TAB -->
-            
-            <div id="contact" class="contact__tab-container tabcontent">
-                <div class="contact__tab">
-                    <h1>CONTACT</h1>
-                    <p>Feel free to fill out the contact form below to message me 📨</p>
-                    <div class="l-form">
-                        <form action="" class="form">
-                            <div class="form__div">
-                                <input type="text" class="form__input" placeholder=" ">
-                                <label for="" class="form__label">Name</label>
-                            </div>
-            
-                            <div class="form__div">
-                                <input type="text" class="form__input" placeholder=" ">
-                                <label for="" class="form__label">Email</label>
-                            </div>
+                            
+                    <section id="contact" class="contact__tab-container tabcontent">
+                        <div class="contact__tab">
+                            <h1>CONTACT</h1>
+                            <p>Feel free to fill out the contact form below to message me 📨</p>
 
-                            <div class="form__div">
-                                <input type="text" class="form__input" placeholder=" ">
-                                <label for="" class="form__label">Message</label>
+                            <div class="l-form">
+                                <form action="" class="form">
+                                    <div class="form__div">
+                                        <input type="text" class="form__input" placeholder=" ">
+                                        <label for="" class="form__label">Name</label>
+                                    </div>
+                            
+                                    <div class="form__div">
+                                        <input type="text" class="form__input" placeholder=" ">
+                                        <label for="" class="form__label">Email</label>
+                                    </div>
+
+                                    <div class="form__div">
+                                        <input type="text" class="form__input" placeholder=" ">
+                                        <label for="" class="form__label">Message</label>
+                                    </div>
+                            
+                                    <input type="submit" class="form__button" value="Send">
+                                </form>
                             </div>
-            
-                            <input type="submit" class="form__button" value="Send">
-                        </form>
-                    </div>
-                </div>
-            </div>
+                        </div>
+                    </section>
 
             <!-- LINKS TAB -->
 
-            <div id="links" class="links__tab-container tabcontent">
-                <div class="links__tab">
-                    <h1>LINKS</h1>
-                    <p>Here are some other ways to contact me or keep in touch with me 👏</p>
-                    <div class="social">
-                        <div class="social__container">
-                            <div class="social__content">
-                                <a href="https://www.facebook.com/BejWilson" target="_blank"><i class='bx bxl-facebook-circle social__icon'></i></a>
-                                <span class="social__tooltip social__tooltip-bottom">Benjamin Wilson</span>
-                            </div>
-            
-                            <div class="social__content">
-                                <a href="https://github.com/MarketingPlus" target="_blank"><i class='bx bxl-github social__icon'></i></a>
-                                <span class="social__tooltip social__tooltip-bottom">MarketingPlus</span>
-                            </div>
-            
-                            <div class="social__content">
-                                <a href="https://www.linkedin.com/in/benjamin-wilson-a72b69204/" target="_blank"><i class='bx bxl-linkedin social__icon'></i></a>
-                                <span class="social__tooltip social__tooltip-bottom">Benjamin Wilson</span>
+                    <section id="links" class="links__tab-container tabcontent">
+                        <div class="links__tab">
+                            <h1>LINKS</h1>
+                            <p>Here are some other ways to contact me or keep in touch with me 👏</p>
+
+                            <div class="social">
+                                <div class="social__container">
+
+                                    <div class="social__content">
+                                        <a href="https://www.facebook.com/BejWilson" target="_blank"><i class='bx bxl-facebook-circle social__icon'></i></a>
+                                        <span class="social__tooltip social__tooltip-bottom">Benjamin Wilson</span>
+                                    </div>
+                            
+                                    <div class="social__content">
+                                        <a href="https://github.com/MarketingPlus" target="_blank"><i class='bx bxl-github social__icon'></i></a>
+                                        <span class="social__tooltip social__tooltip-bottom">MarketingPlus</span>
+                                    </div>
+                            
+                                    <div class="social__content">
+                                        <a href="https://www.linkedin.com/in/benjamin-wilson-a72b69204/" target="_blank"><i class='bx bxl-linkedin social__icon'></i></a>
+                                        <span class="social__tooltip social__tooltip-bottom">Benjamin Wilson</span>
+                                    </div>
+
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-            </div>
-        
-        </section>
-</div>
+                    </section>
+                        
+            </section>
     </main>
-</div></div>
+    </div>
 
-<!-- DRAG AND DROP JQUERY -->
+            <!-- DRAG AND DROP JQUERY -->
+
             <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
             <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-            <script>
-                $( function() {
-                  $( "#interface" ).draggable();
-                } );
+                <script>
+                    $( function() {
+                    $( "#interface" ).draggable();
+                    } );
                 </script>
 
-<!-- VERTICAL TABS JS -->
-<script>
-    function openTab(evt, tabName) {
-      var i, tabcontent, tablinks;
-      tabcontent = document.getElementsByClassName("tabcontent");
-      for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].style.display = "none";
-      }
-      tablinks = document.getElementsByClassName("tab__links");
-      for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].className = tablinks[i].className.replace(" active", "");
-      }
-      document.getElementById(tabName).style.display = "block";
-      evt.currentTarget.className += " active";
-    }
+            <!-- VERTICAL TABS JS -->
+
+            <script>
+                function openTab(evt, tabName) {
+                var i, tabcontent, tablinks;
+                tabcontent = document.getElementsByClassName("tabcontent");
+                for (i = 0; i < tabcontent.length; i++) {
+                    tabcontent[i].style.display = "none";
+                }
+                tablinks = document.getElementsByClassName("tab__links");
+                for (i = 0; i < tablinks.length; i++) {
+                    tablinks[i].className = tablinks[i].className.replace(" active", "");
+                }
+                document.getElementById(tabName).style.display = "block";
+                evt.currentTarget.className += " active";
+                }
     
-    // Get the element with id="defaultOpen" and click on it
-    document.getElementById("defaultOpen").click();
-    </script>
+                // Get the element with id="defaultOpen" and click on it
+                document.getElementById("defaultOpen").click();
+            </script>
 
 </body>
 </html>
