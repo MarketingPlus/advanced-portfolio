@@ -253,6 +253,12 @@ input::placeholder {
   font-weight: 500;
   position: relative;
   font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  top: 1rem;
 }
 
 .sidebar h2 {
@@ -1028,6 +1034,20 @@ li:hover .config {
 
 /* =========================== MEDIA QUERIES ================== */
 
+@media screen and (max-width: 1120px) {
+  .about__tab-container,
+  .portfolio__tab-container,
+  .contact__tab-container,
+  .links__tab-container {
+    width: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 70%;
+    position: absolute;
+    top: 30%;
+  }
+}
+
 /* =================== MEDIUM LAPTOPS ================= */
 
 @media screen and (max-width: 997px) {
@@ -1119,6 +1139,7 @@ li:hover .config {
   }
 
   .tab {
+    width: 90vw;
     border-radius: 15px;
     display: flex;
     justify-content: center;
@@ -1170,17 +1191,127 @@ li:hover .config {
 
 /* =============== SMALL LAPTOPS =================== */
 
-@media screen and (max-height: 830px) {
+@media screen and (max-width: 880px) {
+  .tablinks {
+    display: block;
+    margin-left: auto;
+    padding: 0.6rem 1.5rem;
+    outline: none;
+    border: none;
+    background-color: #151883;
+    color: white;
+    font-size: 0.7rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  .settings__header-mobile img {
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+  }
+
+  .header__mobile li {
+    display: flex;
+    align-content: center;
+    align-items: center;
+  }
 }
 
-@media screen and (max-width: 768) {
+@media screen and (max-width: 768px) {
   .card {
     display: flex;
     height: 50%;
     width: 60%;
     flex-wrap: wrap;
   }
+  .tablinks {
+    display: block;
+    margin-left: auto;
+    padding: 0.5rem 1rem;
+    outline: none;
+    border: none;
+    background-color: #151883;
+    color: white;
+    font-size: 0.65rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  .settings__header-mobile img {
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+  }
+
+  .header__mobile li {
+    display: flex;
+    align-content: center;
+    align-items: center;
+  }
 }
 
-@media screen and (max-width: 576) {
+@media screen and (max-width: 576px) {
+  .tab {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+  }
+  .tablinks {
+    display: block;
+    margin-left: auto;
+    padding: 0.3rem 0.8rem;
+    outline: none;
+    border: none;
+    background-color: #151883;
+    color: white;
+    font-size: 0.7rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  .settings__header-mobile img {
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+  }
+
+  .header__mobile li {
+    display: flex;
+    align-content: center;
+    align-items: center;
+  }
+
+  .header__mobile {
+    width: 100%;
+    display: flex;
+  }
+
+  .about__tab-mobile,
+  .portfolio__tab-mobile,
+  .contact__tab-mobile,
+  .links__tab-mobile {
+    display: flex;
+  }
+
+  .links__tab-container {
+    width: 100%;
+    overflow-y: scroll;
+  }
+
+  .social__container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 1rem;
+  }
+
+  .social__content {
+    margin: 1rem;
+  }
+
+  .l-form {
+    width: 50%;
+  }
 }
