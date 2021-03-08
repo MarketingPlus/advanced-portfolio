@@ -1,12 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,500;1,500&display=swap");
 
 :root {
+  /* =============== DEFAULT FONT SETTINGS ============== */
   --body-font: "Poppins", sans-serif;
   --normal-font-size: 1rem;
+
+  /* =============== DEFAULT COLOURS ========== */
 
   --light-purple: #2a377c;
   --dark-purple: #1a184f;
 }
+
+/* ============== ANIMATION ON LOAD =============== */
 
 @keyframes slideInFromLeft {
   0% {
@@ -17,9 +22,13 @@
   }
 }
 
+/* transition for animation */
+
 #interface {
   animation: 1s ease 0s 1 slideInFromLeft;
 }
+
+/* ============== UNIVERSAL WEBSITE STYLING ============== */
 
 * {
   font-family: "Poppins", sans-serif;
@@ -45,6 +54,8 @@ html {
 
 /* ======== HEADER ======== */
 
+/* top navbar styling and positioning */
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -61,13 +72,19 @@ html {
   box-shadow: 10px 10px 30px (0, 0, 0, 0.5);
 }
 
+/* I have seprate headers for desktop and mobile */
+
 .navbar__mobile {
   display: none;
 }
 
+/* To show its an interactable tab that can be moved */
+
 .navbar:hover {
   cursor: grab;
 }
+
+/* button positioning and styling */
 
 ul .top__buttons {
   margin-right: 0px;
@@ -89,6 +106,8 @@ ul .top__buttons {
   right: 20px;
 }
 
+/* making it feel more interactive however, actual interactions have yet to be added */
+
 .top__buttons:hover {
   cursor: pointer;
 }
@@ -100,6 +119,8 @@ ul .top__buttons {
 .setting:hover {
   cursor: pointer;
 }
+
+/* top left buttons to simulate the feeling of an application */
 
 .red__button {
   height: 10px;
@@ -124,6 +145,8 @@ ul .top__buttons {
   border-radius: 50%;
   position: relative;
 }
+
+/* arrow/movement buttons stylinh and positioning */
 
 .movement__arrows {
   position: relative;
@@ -168,6 +191,8 @@ ul .top__buttons {
 .movement__arrows i {
   color: #2374e8;
 }
+
+/* search bar that has the feel but doesnt yet have the search function intergrated in */
 
 .search__bar {
   display: flex;
@@ -214,6 +239,8 @@ input::placeholder {
   );
 }
 
+/* Cog wheel styling */
+
 .setting {
   display: flex;
   justify-content: center;
@@ -223,6 +250,8 @@ input::placeholder {
 }
 
 /* ======== SIDEBAR ======== */
+
+/* sidebar styling and positioning */
 
 .sidebar {
   display: flex;
@@ -243,6 +272,8 @@ input::placeholder {
   );
   box-shadow: 10px 10px 30px (0, 0, 0, 0.5);
 }
+
+/* positioning of all sidebar elements */
 
 .my__avatar ul {
   display: flex;
@@ -288,6 +319,8 @@ input::placeholder {
   margin: 5px;
 }
 
+/* my icon/avatar image styling, postioning, and sizing */
+
 .my__avatar {
   display: flex;
   justify-content: center;
@@ -309,12 +342,6 @@ input::placeholder {
   justify-content: space-evenly;
 }
 
-.tab__buttons {
-  display: block;
-  text-align: center;
-  width: 100%;
-}
-
 .my__avatar img {
   width: 125px;
   height: 125px;
@@ -326,6 +353,14 @@ input::placeholder {
 }
 
 /* ======== TAB BUTTONS ======== */
+
+/* button styling and positioning */
+
+.tab__buttons {
+  display: block;
+  text-align: center;
+  width: 100%;
+}
 .tab__buttons h3 {
   font-weight: 500;
   font-size: 14px;
@@ -357,6 +392,8 @@ input::placeholder {
   transition: 0.3s ease;
 }
 
+/* asethetic line to make sure all buttons are contained with a border */
+
 #top__line {
   border-top: 1px solid rgba(255, 255, 255, 0.4);
 }
@@ -381,10 +418,16 @@ input::placeholder {
   padding: 3px 15px 3px 15px;
   font-weight: 300;
 }
+
 /* ======== TAB ======== */
+
+/* heading for mobile shouldn't be displayed until mobile screen size has been triggered */
+
 .header__mobile {
   display: none;
 }
+
+/* styling, sizing, and positioning for my tab header*/
 
 .tab {
   display: flex;
@@ -405,6 +448,8 @@ input::placeholder {
   box-shadow: 10px 10px 30px (0, 0, 0, 0.5);
 }
 
+/* class that allows my sidebar and tab section to sit next to eachother */
+
 .side__side {
   display: flex;
 }
@@ -413,6 +458,8 @@ input::placeholder {
   text-decoration: none;
 }
 
+/* sizing and styling of my header topbar */
+
 .settings__header {
   display: flex;
   height: 15%;
@@ -420,9 +467,13 @@ input::placeholder {
   border-bottom: 1px solid rgba(255, 255, 255, 0.4);
 }
 
+/* making sure the header for mobile isnt showing on desktop */
+
 .settings__header-mobile {
   display: none;
 }
+
+/* styling, sizing and color of text in the header for desktop */
 
 .settings__header p {
   font-size: 14px;
@@ -447,6 +498,9 @@ input::placeholder {
   position: relative;
   color: white;
 }
+
+/* styling my config button to make it seem interactive 
+because im going to be adding features for this button in the future */
 
 .config {
   position: relative;
@@ -485,6 +539,9 @@ li:hover .config {
   margin-bottom: 0;
 }
 
+/* setting the margin and padding for the containers to ensure all 
+elements that fall under the respective containers dont overflow */
+
 .about__tab-container,
 .portfolio__tab-container,
 .contact__tab-container,
@@ -496,6 +553,8 @@ li:hover .config {
   top: 15%;
 }
 
+/* Styling the buttons for each tab */
+
 .tab__buttons button {
   background-color: rgba(255, 0, 0, 0);
   border: 0;
@@ -504,6 +563,8 @@ li:hover .config {
   display: flex;
   justify-content: center;
 }
+
+/* Function to allow the tabs to work */
 
 #portfolio,
 #contact,
@@ -525,15 +586,18 @@ li:hover .config {
 
 /* ================ ABOUT ME - MESSAGES ==============*/
 
+/* container with scroll bar */
 .about__tab-container {
   overflow-y: scroll;
   width: 100%;
 }
 
+/* making sure conent fits within the container */
 .about__tab {
   width: 100%;
 }
 
+/* custom scroll bar to fit the aesthetic to my website */
 ::-webkit-scrollbar {
   width: 10px;
   margin-left: 5px;
@@ -547,6 +611,8 @@ li:hover .config {
   );
   border-radius: 5px;
 }
+
+/* styling the messages so it appears like someone has set me a message */
 
 .message__header {
   display: flex;
@@ -577,6 +643,8 @@ li:hover .config {
   font-size: 14px;
 }
 
+/* styling the messages so it looks like a bubble text message  */
+
 .message__question {
   width: 35vw;
   height: 100%;
@@ -594,17 +662,23 @@ li:hover .config {
   padding: 0 15px 0 15px;
 }
 
+/* positioning for messages that are right */
+
 .message__container-right {
   display: flex;
   width: 100%;
   justify-content: flex-start;
 }
 
+/* positioning for messages that are left */
+
 .message__container-left {
   display: flex;
   width: 100%;
   justify-content: flex-end;
 }
+
+/* making the right elements reverse order to make them look better */
 
 .message__header-right {
   display: flex;
@@ -664,6 +738,9 @@ li:hover .config {
   padding: 0 15px 0 15px;
 }
 
+/* adding a message end element to keep the appearance and aesthetic of the
+application the same */
+
 .end__chat ul {
   display: flex;
   justify-content: space-evenly;
@@ -691,12 +768,7 @@ li:hover .config {
 
 /* ======================== PORTFOLIO TAB ============================= */
 
-.portfolio__tab {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
+/* making the container a flexbox so everything can get centered  */
 
 .portfolio__container {
   display: flex;
@@ -705,6 +777,17 @@ li:hover .config {
   width: 95%;
   height: 100%;
 }
+
+/* making sure all the content fits in the container */
+
+.portfolio__tab {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* styling text for the portfolio tab  */
 
 .portfolio__tab h1 {
   color: white;
@@ -717,6 +800,8 @@ li:hover .config {
   font-weight: lighter;
 }
 
+/* styling project cards to display my work and projects to employers */
+
 .card {
   background-color: rgba(48, 63, 133, 0.8);
   width: 25%;
@@ -725,6 +810,8 @@ li:hover .config {
   border-radius: 10px;
   transition: 0.5s ease;
 }
+
+/* same project cards as above but the size of this one is bigger because this was my first project */
 
 .first__project {
   background-color: rgba(48, 63, 133, 0.8);
@@ -735,6 +822,8 @@ li:hover .config {
   transition: 0.5s ease;
 }
 
+/* image styling for the cards */
+
 .card img,
 .first__project img {
   width: 100%;
@@ -743,6 +832,8 @@ li:hover .config {
   transition: 0.5s ease;
 }
 
+/* text styling for the cards */
+
 .card-header,
 .card-p {
   display: flex;
@@ -750,6 +841,8 @@ li:hover .config {
   justify-content: center;
   color: white;
 }
+
+/* adding a custom scroll bar for the portfolio tab */
 
 .portfolio__tab-container {
   overflow-y: scroll;
@@ -770,6 +863,8 @@ li:hover .config {
   border-radius: 5px;
 }
 
+/* hover effects for the cards to make sure people know they are clickable */
+
 .card:hover {
   background: radial-gradient(rgba(73, 93, 184, 0.8), rgba(17, 40, 143, 0.8));
   cursor: pointer;
@@ -784,22 +879,6 @@ li:hover .config {
   text-decoration: none;
   color: black;
   height: auto;
-}
-
-.card i {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-  padding: 10px;
-  font-size: 100px;
-  transition: none;
-}
-
-.icon__container {
-  background-color: white;
-  border-radius: 5px;
-  height: ;
 }
 
 .card__overlay {
@@ -817,10 +896,14 @@ li:hover .config {
 
 /* ================ CONTACT TAB ================= */
 
+/* making the container a flexbox so everything can get centered  */
+
 .contact__tab-container {
   width: 100%;
   overflow-y: scroll;
 }
+
+/* making sure all the content fits in the container */
 
 .contact__tab {
   display: flex;
@@ -829,6 +912,8 @@ li:hover .config {
   align-content: center;
   flex-direction: column;
 }
+
+/* styling text for the contact tab  */
 
 .contact__tab h1 {
   color: white;
@@ -843,11 +928,16 @@ li:hover .config {
 
 /* =============== FORM =============== */
 
+/* form container */
+
 .l-form {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
+/* form styling and styling */
+
 .form {
   width: 360px;
   padding: 4rem 2rem;
@@ -856,15 +946,17 @@ li:hover .config {
   background-color: #3b498c;
   margin-bottom: 3rem;
 }
-.form__title {
-  font-weight: 400;
-  margin-bottom: 3rem;
-}
+
+/* positioning for my form inputs and styling*/
+
 .form__div {
   position: relative;
   height: 48px;
   margin-bottom: 3rem;
 }
+
+/* styling for the input of my form */
+
 .form__input {
   position: absolute;
   top: 0;
@@ -880,6 +972,9 @@ li:hover .config {
   z-index: 1;
 }
 
+/* making the label for my form so it can create 
+a hover effect / cut out effect */
+
 .form__label {
   position: absolute;
   left: 1rem;
@@ -890,6 +985,8 @@ li:hover .config {
   font-size: 1rem;
   transition: 0.3s;
 }
+
+/* styling button */
 
 .form__button {
   display: block;
